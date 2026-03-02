@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>AI Quiz - BYOK Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🤖 AI Quiz (Demo dùng API key riêng)</h1>
+
+  <div class="card">
+    <label>Chọn AI:</label>
+    <select id="provider">
+      <option value="gemini">Gemini</option>
+      <option value="openai">ChatGPT</option>
+      <option value="deepseek">DeepSeek</option>
+    </select>
+
+    <input id="apikey" placeholder="Nhập API key (acc clone)" />
+    <button onclick="saveKey()">Lưu API Key</button>
+  </div>
+
+  <div class="card">
+    <input id="prompt" placeholder="Ví dụ: Tạo 3 câu toán lớp 7 hình học" />
+    <button onclick="generate()">Tạo đề bằng AI</button>
+  </div>
+
+  <div class="card result" id="result">Kết quả AI sẽ hiện ở đây...</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
